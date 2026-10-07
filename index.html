@@ -176,7 +176,7 @@ h1:hover, h2:hover, h3:hover, p:hover, li:hover, span:hover, b:hover, em:hover {
 .slide.content-slide.is-emergency .panel{border-top-color:var(--alert);}
 .panel h3{
   margin:0 0 13px; font-family:'IBM Plex Sans Condensed', sans-serif; font-weight:600;
-  font-size:14.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--navy);
+  font-size:clamp(16px, 1.15vw, 18px); letter-spacing:.05em; text-transform:uppercase; color:var(--navy);
   display:flex; align-items:center; gap:9px;
 }
 .panel h3::before{
@@ -185,7 +185,7 @@ h1:hover, h2:hover, h3:hover, p:hover, li:hover, span:hover, b:hover, em:hover {
 .slide.content-slide.is-emergency .panel h3::before{background:var(--alert);}
 .panel ul{margin:0; padding:0 0 0 18px; overflow-y:auto;}
 .panel li{
-  font-size:14px; line-height:1.45; color:var(--ink); margin-bottom:9px; padding-left:2px;
+  font-size:clamp(16px, 1.15vw, 18px); line-height:1.5; color:var(--ink); margin-bottom:12px; padding-left:2px;
 }
 .panel li b, .panel li strong{color:var(--navy); font-weight:600;}
 .panel li:last-child{margin-bottom:0;}
