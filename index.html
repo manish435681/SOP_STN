@@ -116,15 +116,7 @@ h1:hover, h2:hover, h3:hover, p:hover, li:hover, span:hover, b:hover, em:hover {
 .title-wrap{max-width:1400px; width:100%; padding:0 72px; display:flex; align-items:center; gap:64px;}
 .title-mark{
   flex:0 0 auto; width:132px; height:132px; border-radius:50%;
-  border:5px solid var(--line-green);
-  display:flex; align-items:center; justify-content:center;
-  position:relative;
-}
-.title-mark::before{
-  content:""; position:absolute; inset:14px;
-  background-image: repeating-linear-gradient(115deg, var(--line-green) 0 9px, transparent 9px 15px);
-  -webkit-mask: radial-gradient(circle, #000 60%, transparent 62%);
-          mask: radial-gradient(circle, #000 60%, transparent 62%);
+  object-fit:cover;
 }
 .title-eyebrow{
   font-family:'IBM Plex Mono', monospace; font-size:14px; letter-spacing:.22em;
@@ -572,7 +564,7 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.add("title-slide");
         el.innerHTML = `
           <div class="title-wrap">
-            <div class="title-mark"></div>
+            <img class="title-mark" src="assets/logo.jpg" alt="Noida Metro Rail Corporation logo">
             <div>
               <p class="title-eyebrow">Noida Metro Rail Corporation</p>
               <h1 class="title-heading">Station<br><em>SOP</em></h1>
